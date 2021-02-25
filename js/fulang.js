@@ -19,9 +19,9 @@
       let soma = 0;
       let rolarjs = $("#formControlRangeRolar").val();
       let manterjs = $("#formControlRangeManter").val();
-      const explodirdezjs = $("#ExplodirDez").is(':checked');
-      const explodirnovejs = $("#ExplodirNove").is(':checked');
-      const rerolarumjs = $("#RerolarUm").is(':checked');
+      let explodirdezjs = $("#ExplodirDez").is(':checked');
+      let explodirnovejs = $("#ExplodirNove").is(':checked');
+      let rerolarumjs = $("#RerolarUm").is(':checked');
 
       if (manterjs > rolarjs) manterjs = rolarjs;
 
