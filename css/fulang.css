@@ -1,52 +1,136 @@
-    .title {
-      font-family: 'l5r-5e-titlesregular';
-    }
-    .fs10 {
-      font-size: 1rem;
-    }
-    .fs11 {
-      font-size: 1.1rem;
-    }
-    .fs12 {
-      font-size: 1.2rem;
-    }
-    .fs13 {
-      font-size: 1.3rem;
-    }
-    .fs14 {
-      font-size: 1.4rem;
-    }
-    .fs15 {
-      font-size: 1.5rem;
-    }
-    .manter {
-      font-family: 'yozakura_jplight';
-      font-size: 3rem;
-      color: #169049;
-      margin: 0 3px;
-    }
-    .explodir {
-      font-family: 'yozakura_jplight';
-      font-size: 3rem;
-      color: #fb2f2f;
-      margin: 0 3px;
-    }    
-    .ignorar {
-      font-family: 'yozakura_jplight';
-      font-size: 3rem;
-      color: #969696;
-      margin: 0 3px;
-    }    
-    .falha {
-      font-family: 'yozakura_jplight';
-      font-size: 3rem;
-      color: #636363;
-      margin: 0 3px;
-    }
-    .soma {
-      font-family: 'yozakura_jplight';
-      font-size: 3rem;      
-      color: #1770d5;
-      margin: 0 3px;
-      display: block;
-    }
+.title {
+  font-family: 'l5r-5e-titlesregular';
+}
+.fs10 {
+  font-size: 1rem;
+}
+.fs11 {
+  font-size: 1.1rem;
+}
+.fs12 {
+  font-size: 1.2rem;
+}
+.fs13 {
+  font-size: 1.3rem;
+}
+.fs14 {
+  font-size: 1.4rem;
+}
+.fs15 {
+  font-size: 1.5rem;
+}
+.manter {
+  font-family: 'yozakura_jplight';
+  font-size: 3rem;
+  color: #169049;
+  margin: 0 3px;
+}
+.explodir {
+  font-family: 'yozakura_jplight';
+  font-size: 3rem;
+  color: #fb2f2f;
+  margin: 0 3px;
+}    
+.ignorar {
+  font-family: 'yozakura_jplight';
+  font-size: 3rem;
+  color: #969696;
+  margin: 0 3px;
+}    
+.falha {
+  font-family: 'yozakura_jplight';
+  font-size: 3rem;
+  color: #636363;
+  margin: 0 3px;
+}
+.soma {
+  font-family: 'yozakura_jplight';
+  font-size: 3rem;      
+  color: #1770d5;
+  margin: 0 3px;
+  display: block;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #333;
+  background-color: #333;
+}
+
+    input[type=range] {
+  width: 100%;
+  margin: 8.5px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: #999999;
+  border: 1.4px solid rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -9.9px;
+  width: 17px;
+  height: 17px;
+  background: #666666;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #999999;
+}
+input[type=range]::-moz-range-track {
+  background: #999999;
+  border: 1.4px solid rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 17px;
+  height: 17px;
+  background: #666666;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 9.5px 0;
+  color: transparent;
+  width: 100%;
+  height: 0px;
+  cursor: pointer;
+}
+input[type=range]::-ms-fill-lower {
+  background: #999999;
+  border: 1.4px solid rgba(0, 0, 0, 0);
+}
+input[type=range]::-ms-fill-upper {
+  background: #999999;
+  border: 1.4px solid rgba(0, 0, 0, 0);
+}
+input[type=range]::-ms-thumb {
+  width: 17px;
+  height: 17px;
+  background: #666666;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #999999;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #999999;
+}
