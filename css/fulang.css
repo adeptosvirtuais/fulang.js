@@ -1,0 +1,52 @@
+    .title {
+      font-family: 'yozakura_jplight';
+    }
+    .fs10 {
+      font-size: 1rem;
+    }
+    .fs11 {
+      font-size: 1.1rem;
+    }
+    .fs12 {
+      font-size: 1.2rem;
+    }
+    .fs13 {
+      font-size: 1.3rem;
+    }
+    .fs14 {
+      font-size: 1.4rem;
+    }
+    .fs15 {
+      font-size: 1.5rem;
+    }
+    .manter {
+      font-family: 'yozakura_jplight';
+      font-size: 3rem;
+      color: #169049;
+      margin: 0 3px;
+    }
+    .explodir {
+      font-family: 'yozakura_jplight';
+      font-size: 3rem;
+      color: #fb2f2f;
+      margin: 0 3px;
+    }    
+    .ignorar {
+      font-family: 'yozakura_jplight';
+      font-size: 3rem;
+      color: #969696;
+      margin: 0 3px;
+    }    
+    .falha {
+      font-family: 'yozakura_jplight';
+      font-size: 3rem;
+      color: #636363;
+      margin: 0 3px;
+    }
+    .soma {
+      font-family: 'yozakura_jplight';
+      font-size: 3rem;      
+      color: #1770d5;
+      margin: 0 3px;
+      display: block;
+    }
