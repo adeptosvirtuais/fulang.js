@@ -49,6 +49,8 @@
             if (roladoexplode > 1) {
               $("#resultado").append(' <span class="explodir">' + roladoexplode + '</span>');
               soma += roladoexplode;
+            } else {
+              $("#resultado").append(' <span class="ignorar">' + roladoexplode + '</span>');
             }
           } while (roladoexplode >= 9)
         } else if (dado == 10 && explodirdezjs === true) {
@@ -57,6 +59,8 @@
             if (roladoexplode > 1) {
               $("#resultado").append(' <span class="explodir">' + roladoexplode + '</span>');
               soma += roladoexplode;
+            } else {
+              $("#resultado").append(' <span class="ignorar">' + roladoexplode + '</span>');
             }
           } while (roladoexplode == 10)
         }
