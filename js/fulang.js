@@ -11,7 +11,7 @@
     });
   });
 
-  
+
   $(function () {
     $('#form_dado').on('submit', function (e) {
       e.preventDefault();
@@ -36,13 +36,18 @@
 
       for (var i = 0; i < manterjs; i++) {
         var dado = rolados[0];
-        soma += rolados.shift();
-        $("#resultado").append('<span class="manter">' + dado + '</span>');
+        rolados.shift();
+        if(dado == 1) {
+          $("#resultado").append(' <span class="ignorar">' + dado + '</span>');
+        } else {
+          soma += dado;
+          $("#resultado").append(' <span class="manter">' + dado + '</span>');
+        }
         if (dado >= 9 && explodirnovejs === true) {
           do {
             var roladoexplode = Math.floor(Math.random() * 10) + 1;
             if (roladoexplode > 1) {
-              $("#resultado").append('<span class="explodir">' + roladoexplode + '</span>');
+              $("#resultado").append(' <span class="explodir">' + roladoexplode + '</span>');
               soma += roladoexplode;
             }
           } while (roladoexplode >= 9)
@@ -50,15 +55,15 @@
           do {
             var roladoexplode = Math.floor(Math.random() * 10) + 1;
             if (roladoexplode > 1) {
-              $("#resultado").append('<span class="explodir">' + roladoexplode + '</span>');
+              $("#resultado").append(' <span class="explodir">' + roladoexplode + '</span>');
               soma += roladoexplode;
             }
           } while (roladoexplode == 10)
         }
       }
       for (var i = 0; i < rolados.length; i++) {
-        $("#resultado").append('<span class="ignorar">' + rolados[i] + '</span>');
+        $("#resultado").append(' <span class="ignorar">' + rolados[i] + '</span>');
       }
-      $("#resultado").append('<span class="soma">' + soma + '</span>');
+      $("#resultado").append(' <span class="soma">' + soma + '</span>');
     });
   });
