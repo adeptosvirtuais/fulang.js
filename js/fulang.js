@@ -23,7 +23,12 @@
       let explodirnovejs = $("#ExplodirNove").is(':checked');
       let rerolarumjs = $("#RerolarUm").is(':checked');
 
-      if (manterjs > rolarjs) manterjs = rolarjs;
+      manterjs = parseInt(manterjs);
+      rolarjs = parseInt(rolarjs);
+      
+      if (manterjs > rolarjs) {
+        manterjs = rolarjs;
+      }
 
       for (var i = 0; i < rolarjs; i++) {
         do {
