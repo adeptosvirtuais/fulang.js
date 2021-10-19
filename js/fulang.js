@@ -131,8 +131,8 @@
     });
 });
 $(function () {
-  $('select').select2({
-    theme: "bootstrap-5",
+  $('.selects').select2({
+    theme: "default",
     language: "pt-BR",
     placeholder: "Selecione uma opção",
     //allowClear: true
