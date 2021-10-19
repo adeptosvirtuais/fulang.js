@@ -11,6 +11,12 @@
   <title>
     L5R Dados
   </title>
+  <style>
+    .mobile {
+      width: 414px !important;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
 <nav class="navbar navbar-light">
@@ -18,9 +24,9 @@
     <div class="navbar-brand"><span class="brand">m</span> Fulang</div>
   </div>
 </nav>  
-<div class="container">
+<div class="container mobile">
   <div class="row justify-content-center">
-    <div class="col-9 col-md-6 col-lg-3">
+    <div class="col-9">
       <img src="img/logo.webp" class="img-fluid" alt="logo" width="400" height="140" />
     </div>
   </div>
@@ -38,7 +44,7 @@
         <div class="tab-pane fade show active" id="home-1" role="tabpanel" aria-labelledby="home-tab-1">
 
           <div class="row pt-3 g-0 justify-content-center">
-            <div class="col-12 col-md-8 col-lg-5">
+            <div class="col-12">
               <form id="form_dado" method="post" autocomplete="off">
                   <div class="row g-0">
                     <div class="col-12 text-center">
@@ -65,7 +71,7 @@
                     </div>
                   </div>
                   <div class="row mt-0 justify-content-center">
-                    <div class="col-7 col-md-6">
+                    <div class="col-12">
                       <button type="submit" class="btn btn-sm btn-l5r">Rolar</button>           
                     </div>
                   </div>
@@ -80,8 +86,8 @@
         <div class="tab-pane fade" id="home-2" role="tabpanel" aria-labelledby="home-tab-2">
 
           <div class="row pt-3 g-0 justify-content-center">
-            <div class="col-11 col-md-3 mb-3">
-              <select name="clan" id="clan" class="form-control">
+            <div class="col-12 mb-3">
+              <select name="clan" id="clan" class="form-control selects" style="width: 100%;">
                 <option></option>
                 <optgroup label="Clãs" class="bg-light text-dark">
                   <option value="crab">Caranguejo</option>
@@ -114,8 +120,8 @@
               </select>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-7 col-md-6 col-lg-2">
+          <div class="row mt-0 justify-content-center">
+            <div class="col-12">
               <button id="btn-l5r-name" class="btn btn-sm btn-l5r">Gerar</button>
             </div>
           </div>          
@@ -136,7 +142,6 @@
   <link rel="stylesheet" href="fonts/l5r-5e-fonts.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/select2.min.css" />
-  <link rel="stylesheet" href="css/select2-bootstrap-5-theme.min.css" />
   <link rel="stylesheet" href="css/fulang.css" />
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
