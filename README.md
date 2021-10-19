@@ -1,4 +1,4 @@
-# fulang.js v1.52
+# fulang.js v1.55
 
 Usando:<br>
 jquery 3.6.0<br>
